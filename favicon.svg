@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#F4EFE3"/>
-  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#3E5238" stroke-width="2"/>
-  <rect x="7.5" y="7.5" width="49" height="49" rx="8" fill="none" stroke="#C5A568" stroke-width="1"/>
-  <text x="32" y="41" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#3E5238" text-anchor="middle">AI</text>
-  <circle cx="46" cy="18" r="4" fill="#A9714B"/>
+  <rect width="64" height="64" rx="16" fill="#FFFBF6"/>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="#C9C0E8" stroke-width="2"/>
+  <rect x="7.5" y="7.5" width="49" height="49" rx="10" fill="none" stroke="#E3A1B9" stroke-width="1.5"/>
+  <text x="32" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#5C4E76" text-anchor="middle">AI</text>
+  <circle cx="47" cy="17" r="4" fill="#F2B58E"/>
+  <circle cx="51" cy="26" r="2.5" fill="#8BC9AC"/>
+  <circle cx="44" cy="24" r="2" fill="#DFEEF9"/>
 </svg>

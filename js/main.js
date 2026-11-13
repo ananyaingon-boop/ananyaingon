@@ -1,5 +1,6 @@
 /* ============================================
    Portfolio · Ananya Jitthipakorn — interactions
+   (IT / Cyber theme)
    ============================================ */
 (function () {
   "use strict";
@@ -44,7 +45,6 @@
     if (e.target.closest("a")) closeMenu();
   });
 
-  /* ---------- เปิด/ปิดเมนูด้วยปุ่ม Esc ---------- */
   window.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeMenu();
   });
@@ -57,14 +57,11 @@
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
-
-            // เติมแถบทักษะด้วยค่า --w ของการ์ด
-            entry.target.classList.add("is-inview");
             revealObserver.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.05 }
     );
     revealEls.forEach(function (el) {
       el.classList.contains("is-visible") || revealObserver.observe(el);
@@ -131,6 +128,52 @@
     sectionObserver.observe(s);
   });
 
+  /* ---------- กล่อง Terminal: พิมพ์คำสั่งวนซ้ำ ---------- */
+  var terminalBody = document.getElementById("terminalBody");
+  if (terminalBody) {
+    var tLines = Array.prototype.slice.call(
+      terminalBody.querySelectorAll(".t-out")
+    );
+    var tOutput = {
+      whoami: "> ananya.jitthipakorn",
+      status: "> ปวส.2 · เทคโนโลยีสารสนเทศ · open to work",
+      deploy: "> ✓ build complete — deployed."
+    };
+    var tIdx = 0;
+
+    function typeLine() {
+      if (tIdx >= tLines.length) {
+        setTimeout(resetTerminal, 7000);
+        return;
+      }
+      var el = tLines[tIdx];
+      var text = tOutput[el.getAttribute("data-line")] || "";
+      el.textContent = "";
+      var i = 0;
+      (function step() {
+        i++;
+        el.textContent = text.slice(0, i);
+        if (i < text.length) {
+          setTimeout(step, 16);
+        } else {
+          tIdx++;
+          setTimeout(typeLine, 380);
+        }
+      })();
+    }
+
+    function resetTerminal() {
+      tLines.forEach(function (l) {
+        l.textContent = "";
+      });
+      tIdx = 0;
+      typeLine();
+    }
+
+    /* เริ่มพิมพ์หลังโหลดเล็กน้อย (พิมพ์วนซ้ำตลอด) */
+    setTimeout(resetTerminal, 1000);
+  }
+
   /* ---------- แบบฟอร์มติดต่อ (ตัวอย่าง — ไม่ส่ง backend) ---------- */
   var form = document.getElementById("contactForm");
   var hint = document.getElementById("formHint");
@@ -143,8 +186,8 @@
       }
       var name = document.getElementById("name").value.trim();
       hint.textContent =
-        "ขอบคุณ " + (name || "คุณ") + " 🙏💚 ข้อความถูกบันทึกแล้ว (ต้องเชื่อมต่อ backend เพื่อส่งอีเมลจริง)";
-      hint.style.color = "#3E5238";
+        "✓ ขอบคุณ " + (name || "คุณ") + " — ข้อความถูกบันทึกแล้ว (ต้องต่อ backend เพื่อส่งอีเมลจริง)";
+      hint.style.color = "#67E8F9";
       form.reset();
     });
   }

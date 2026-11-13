@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio ของ อนัญญา จิตทิพากร — นักออกแบบกราฟิกและนักพัฒนาเว็บ" />
+  <meta name="description" content="Portfolio ของ อนัญญา จิตทิพากร — นักศึกษา ปวส. ชั้นปี 2 แผนกเทคโนโลยีสารสนเทศ" />
   <title>อนัญญา จิตทิพากร · Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -43,38 +43,48 @@
           <span class="line"></span> ยินดีต้อนรับสู่โลกของฉัน / Welcome
         </p>
         <h1 class="hero__title">Ananya<br />Jitthipakorn</h1>
-        <p class="hero__subtitle">นักออกแบบกราฟิก <em>&amp;</em> นักพัฒนาเว็บ</p>
+        <p class="hero__subtitle">นักศึกษา ปวส. 2 <em>&amp;</em> สายเทคโนโลยีสารสนเทศ</p>
         <p class="hero__desc">
-          ชอบสร้างสรรค์งานที่เรียบง่าย อบอุ่น และมีรายละเอียด
-          ผสานแรงบันดาลใจจากธรรมชาติเข้ากับการออกแบบดิจิทัล
-          เพื่อให้ทุกชิ้นงานมีเรื่องราวและตัวตนของตัวเอง
+          นักศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2
+          แผนกเทคโนโลยีสารสนเทศ ผู้หลงใหลในการออกแบบเว็บและพัฒนาระบบ
+          ชอบทำงานที่เรียบง่าย อบอุ่น ได้ใจ และมีรายละเอียดครบถ้วน
         </p>
         <div class="hero__actions">
           <a href="#projects" class="btn btn--primary">ดูผลงานของฉัน</a>
           <a href="#contact" class="btn btn--ghost">ติดต่อฉัน</a>
         </div>
         <div class="hero__meta">
-          <div class="hero__map"></div>
-          <span>นครปฐม, ประเทศไทย</span>
-          <span class="dot">·</span>
-          <span>พร้อมรับงานอิสระ</span>
+          <span class="hero__chip"><span class="k">LOC</span><span class="dot">:</span><span class="v">นครปฐม, ประเทศไทย</span></span>
+          <span class="hero__chip"><span class="k">STATUS</span><span class="dot">:</span><span class="v">OPEN TO WORK</span></span>
         </div>
-      </div>
+        <div class="terminal reveal" aria-hidden="true">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">ananya@portfolio: ~</span>
+          </div>
+          <div class="terminal__body" id="terminalBody">
+            <div data-rep="cmd"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+            <div class="t-out" data-line="whoami"></div>
+            <div data-rep="cmd"><span class="t-prompt">$</span> <span class="t-cmd">cat status.txt</span></div>
+            <div class="t-out" data-line="status"></div>
+            <div data-rep="cmd"><span class="t-prompt">$</span> <span class="t-cmd">./deploy.sh --go</span></div>
+            <div class="t-out" data-line="deploy"></div>
+          </div>
+        </div>
+        </div>
 
       <div class="hero__portrait reveal">
-        <div class="frame">
-          <img src="inmonky.jpg" alt="ภาพโปรไฟล์ของ Ananya Jitthipakorn" class="frame__img" />
-        </div>
-        <div class="stamp" aria-hidden="true">
-          <span>A</span><span>nanya</span>
-          <svg viewBox="0 0 100 100" class="stamp__svg">
-            <defs>
-              <path id="stampCircle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
-            </defs>
-            <text>
-              <textPath href="#stampCircle">PORTFOLIO · 2026 · ART &amp; CODE </textPath>
-            </text>
-          </svg>
+        <div class="hud-frame">
+          <i class="corner corner--tl" aria-hidden="true"></i>
+          <i class="corner corner--tr" aria-hidden="true"></i>
+          <i class="corner corner--bl" aria-hidden="true"></i>
+          <i class="corner corner--br" aria-hidden="true"></i>
+          <div class="hud-status"><span class="p"></span><span>ANANYA.IT · ONLINE</span></div>
+          <div class="frame">
+            <img src="inmonky.jpg" alt="ภาพโปรไฟล์ของ Ananya Jitthipakorn" class="frame__img" />
+          </div>
         </div>
         <div class="leaf leaf--1" aria-hidden="true"></div>
         <div class="leaf leaf--2" aria-hidden="true"></div>
@@ -85,6 +95,22 @@
       <span class="hero__scroll-line"></span>
     </a>
   </section>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span><b>WEB DEVELOPER</b><i>◆</i></span>
+      <span><b>DATABASE</b><i>◆</i></span>
+      <span><b>UI / UX DESIGN</b><i>◆</i></span>
+      <span><b>PHP · MYSQL</b><i>◆</i></span>
+      <span><b>HTML · CSS · JS</b><i>◆</i></span>
+      <span><b>ปวส.2 · เทคโนโลยีสารสนเทศ</b><i>◆</i></span>
+      <span><b>WEB DEVELOPER</b><i>◆</i></span>
+      <span><b>DATABASE</b><i>◆</i></span>
+      <span><b>UI / UX DESIGN</b><i>◆</i></span>
+      <span><b>PHP · MYSQL</b><i>◆</i></span>
+      <span><b>HTML · CSS · JS</b><i>◆</i></span>
+      <span><b>ปวส.2 · เทคโนโลยีสารสนเทศ</b><i>◆</i></span>
+    </div>
+  </div>
 
   <!-- ======= ABOUT ======= -->
   <section class="section about" id="about">
@@ -99,8 +125,8 @@
           <p>
             สวัสดีค่ะ ฉันชื่อ <strong>อนัญญา จิตทิพากร</strong>
             นักศึกษาในระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2
-            กำลังศึกษาและฝึกฝนด้านการออกแบบและพัฒนาเว็บ
-            ชอบงานที่ผสมผสานระหว่างความเป็นศิลปะกับความเป็นระบบ
+            แผนกเทคโนโลยีสารสนเทศ หลงใหลการออกแบบเว็บและการพัฒนาระบบ
+            ชอบงานที่ผสมผสานความใส่ใจในรายละเอียดเข้ากับความเป็นระบบ
             ทุกโปรเจกต์คือโอกาส ในการเรียนรู้และเติบโตครั้งใหม่
           </p>
           <p class="about__quote">
@@ -114,7 +140,7 @@
           </div>
           <div class="about__fact">
             <dt>สาขา / Field</dt>
-            <dd>กราฟิกดีไซน์ · เว็บดีเวลลอปเมนต์</dd>
+            <dd>เทคโนโลยีสารสนเทศ (ปวส. 2)</dd>
           </div>
           <div class="about__fact">
             <dt>อีเมล / Email</dt>
@@ -126,9 +152,15 @@
           </div>
           <div class="about__fact">
             <dt>ประสบการณ์ / Exp.</dt>
-            <dd>นักศึกษา ปวส. ชั้นปีที่ 2</dd>
+            <dd>นักศึกษา ปวส. ชั้นปีที่ 2 · แผนกเทคโนโลยีสารสนเทศ</dd>
           </div>
         </dl>
+      </div>
+      <div class="about__cards reveal">
+        <div class="about__card"><strong>ปวส. 2</strong><span>ระดับประกาศนียบัตรฯ</span></div>
+        <div class="about__card"><strong>IT</strong><span>แผนกเทคโนโลยีสารสนเทศ</span></div>
+        <div class="about__card"><strong>10+</strong><span>ผลงาน/โปรเจกต์ฝึกปฏิบัติ</span></div>
+        <div class="about__card"><strong>∞</strong><span>ความอยากเรียนรู้</span></div>
       </div>
     </div>
   </section>
@@ -138,44 +170,45 @@
     <div class="container">
       <div class="section__head reveal">
         <p class="section__tag">ทักษะ · Skills</p>
-        <h2 class="section__title">เครื่องมือที่ไว้วางใจ<br />ในการสร้างสรรค์</h2>
+        <h2 class="section__title">เครื่องมือและสแตค<br />ที่ฉันใช้จริงประจำ</h2>
       </div>
 
       <div class="skills__grid">
         <div class="skill reveal">
           <div class="skill__head">
-            <span class="skill__emoji" aria-hidden="true">✿</span>
-            <h3 class="skill__name">งานออกแบบ</h3>
+            <span class="skill__emoji" aria-hidden="true">⌘</span>
+            <h3 class="skill__name">ออกแบบ / UI</h3>
           </div>
           <div class="skill__bars">
-            <div class="bar"><span class="bar__label">Adobe Photoshop</span><div class="bar__track"><i style="width:90%"></i></div></div>
-            <div class="bar"><span class="bar__label">Adobe Illustrator</span><div class="bar__track"><i style="width:85%"></i></div></div>
-            <div class="bar"><span class="bar__label">Figma</span><div class="bar__track"><i style="width:80%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="90%">Adobe Photoshop</span><div class="bar__track"><i style="width:90%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="85%">Adobe Illustrator</span><div class="bar__track"><i style="width:85%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="80%">Figma</span><div class="bar__track"><i style="width:80%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="85%">Canva</span><div class="bar__track"><i style="width:85%"></i></div></div>
           </div>
         </div>
 
         <div class="skill reveal">
           <div class="skill__head">
-            <span class="skill__emoji" aria-hidden="true">❧</span>
-            <h3 class="skill__name">พัฒนาเว็บ</h3>
+            <span class="skill__emoji" aria-hidden="true">⚙</span>
+            <h3 class="skill__name">พัฒนาเว็บ &amp; ฐานข้อมูล</h3>
           </div>
           <div class="skill__bars">
-            <div class="bar"><span class="bar__label">HTML / CSS</span><div class="bar__track"><i style="width:88%"></i></div></div>
-            <div class="bar"><span class="bar__label">JavaScript</span><div class="bar__track"><i style="width:75%"></i></div></div>
-            <div class="bar"><span class="bar__label">React / PHP</span><div class="bar__track"><i style="width:65%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="90%">HTML / CSS</span><div class="bar__track"><i style="width:90%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="72%">JavaScript</span><div class="bar__track"><i style="width:72%"></i></div></div>
+            <div class="bar"><span class="bar__label" data-pct="70%">PHP / MySQL</span><div class="bar__track"><i style="width:70%"></i></div></div>
           </div>
         </div>
 
         <div class="skill reveal">
           <div class="skill__head">
-            <span class="skill__emoji" aria-hidden="true">✦</span>
-            <h3 class="skill__name">อื่น ๆ</h3>
+            <span class="skill__emoji" aria-hidden="true">☁</span>
+            <h3 class="skill__name">ทักษะเสริม</h3>
           </div>
           <ul class="skill__list">
-            <li>การถ่ายภาพและจัดแสง</li>
-            <li>Motion Graphic ระดับพื้นฐาน</li>
-            <li>UX / UI Research</li>
-            <li>การพิมพ์และจัดหน้า (Print)</li>
+            <li>การวิเคราะห์และออกแบบระบบ (System Analysis)</li>
+            <li>ติดตั้งและดูแลระบบปฏิบัติการ / เครือข่ายเบื้องต้น</li>
+            <li>Microsoft Office : Word / Excel / PowerPoint</li>
+            <li>UX / UI Research &amp; Wireframe</li>
           </ul>
         </div>
       </div>
@@ -187,7 +220,7 @@
     <div class="container">
       <div class="section__head reveal">
         <p class="section__tag">ผลงาน · Projects</p>
-        <h2 class="section__title">ชิ้นงานที่ฉันได้<br />ลงมือทำด้วยหัวใจ</h2>
+        <h2 class="section__title">โปรเจกต์ที่ฉัน<br />สร้างไว้จริง</h2>
       </div>
 
       <div class="projects__grid">
@@ -197,8 +230,8 @@
             <span class="card__icon" aria-hidden="true">☕</span>
           </div>
           <div class="card__body">
-            <h3 class="card__title">เว็บไซต์ร้านกาแฟวินเทจ</h3>
-            <p class="card__desc">ออกแบบ UI และพัฒนาเว็บไซต์ร้านกาแฟแนววินเทจ พร้อมระบบจองโต๊ะและเมนูออนไลน์ทั้งภาษาไทยและอังกฤษ</p>
+            <h3 class="card__title">เว็บไซต์ร้านกาแฟ</h3>
+            <p class="card__desc">ออกแบบ UI และพัฒนาเว็บไซต์ร้านกาแฟ พร้อมระบบจองโต๊ะ เมนูออนไลน์ และโหมดแสดงผลรองรับทั้งมือถือและคอม</p>
             <div class="card__tags"><span>Figma</span><span>HTML/CSS</span><span>JavaScript</span></div>
             <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
           </div>
@@ -206,13 +239,13 @@
 
         <article class="card reveal">
           <div class="card__art card__art--2">
-            <span class="card__badge">Design</span>
-            <span class="card__icon" aria-hidden="true">✒</span>
+            <span class="card__badge">Database</span>
+            <span class="card__icon" aria-hidden="true">◈</span>
           </div>
           <div class="card__body">
-            <h3 class="card__title">เอกลักษณ์แบรนด์สมุนไพรไทย</h3>
-            <p class="card__desc">รังสรรค์โลโก้ สี และแพ็กเกจจิง ให้แบรนด์ผลิตภัณฑ์สมุนไพรไทย สื่อถึงความนุ่มนวลของธรรมชาติและความเชื่อถือได้</p>
-            <div class="card__tags"><span>Illustrator</span><span>Packaging</span><span>Branding</span></div>
+            <h3 class="card__title">ระบบจัดการสต็อกสินค้า</h3>
+            <p class="card__desc">พัฒนาเว็บระบบจัดการสต็อกและยอดขายของร้านค้าขนาดเล็ก เก็บข้อมูลด้วยฐานข้อมูล MySQL พร้อมพิมพ์รายงานสรุป</p>
+            <div class="card__tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
             <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
           </div>
         </article>
@@ -223,9 +256,9 @@
             <span class="card__icon" aria-hidden="true">◈</span>
           </div>
           <div class="card__body">
-            <h3 class="card__title">แอปจัดการตารางเรียน</h3>
-            <p class="card__desc">โปรเจกต์ฝึกงานร่วมกับทีม พัฒนาแอปพลิเคชันแจ้งเตือนและจัดการตารางเรียนด้วยแนวคิดที่เข้าใจผู้ใช้เป็นหลัก</p>
-            <div class="card__tags"><span>UX/UI</span><span>React</span><span>Firebase</span></div>
+            <h3 class="card__title">แนวคิดแอปจัดการตารางเรียน</h3>
+            <p class="card__desc">ออกแบบ UX/UI และวางโครงสร้างหน้าแอปแจ้งเตือน-จัดการตารางเรียน เริ่มจาก Research ผู้ใช้ ไประหว่างเรียน</p>
+            <div class="card__tags"><span>UX/UI</span><span>Figma</span><span>JavaScript</span></div>
             <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
           </div>
         </article>
@@ -238,7 +271,7 @@
     <div class="container">
       <div class="section__head reveal">
         <p class="section__tag">เส้นทาง · Journey</p>
-        <h2 class="section__title">ประสบการณ์และ<br />การศึกษา</h2>
+        <h2 class="section__title">ไทม์ไลน์การเดินทาง<br />สายเทคโนโลยีสารสนเทศ</h2>
       </div>
 
       <div class="timeline">
@@ -246,24 +279,24 @@
           <span class="tline__year">2025 — ปัจจุบัน</span>
           <div class="tline__dot"></div>
           <div class="tline__body">
-            <h3 class="tline__title">นักศึกษา ระดับ ปวส. ชั้นปีที่ 2</h3>
-            <p class="tline__desc">กำลังศึกษาหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2 ด้านการออกแบบและพัฒนาเว็บ พร้อมฝึกฝนทักษะผ่านโปรเจกต์จริงและงานร่วมกับเพื่อนในสตูดิโอของสถาบัน</p>
+            <h3 class="tline__title">นักศึกษา ระดับ ปวส. ชั้นปีที่ 2 · แผนกเทคโนโลยีสารสนเทศ</h3>
+            <p class="tline__desc">กำลังศึกษาหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2 แผนกเทคโนโลยีสารสนเทศ ฝึกฝนทักษะการพัฒนาเว็บ ฐานข้อมูล และการออกแบบระบบผ่านโปรเจกต์จริง</p>
           </div>
         </div>
         <div class="tline reveal">
           <span class="tline__year">ระหว่างการศึกษา</span>
           <div class="tline__dot"></div>
           <div class="tline__body">
-            <h3 class="tline__title">ออกแบบ / พัฒนาเว็บอิสระ</h3>
-            <p class="tline__desc">รับทำเว็บไซต์ขนาดเล็กและงานกราฟิกตามคอนเซปต์ลูกค้า ทั้งดีไซน์และพัฒนาเองจนจบโปรเจกต์ ควบคู่ไปกับการเรียน</p>
+            <h3 class="tline__title">โปรเจกต์ฝึกปฏิบัติ / งานอิสระ</h3>
+            <p class="tline__desc">พัฒนาเว็บไซต์และระบบขนาดเล็ก ตามโจทย์ในรายวิชาและงานอิสระ ทั้งเขียนโค้ด ออกแบบและจัดการฐานข้อมูลด้วยตัวเองจนจบโปรเจกต์</p>
           </div>
         </div>
         <div class="tline reveal">
           <span class="tline__year">จุดเริ่มต้น</span>
           <div class="tline__dot"></div>
           <div class="tline__body">
-            <h3 class="tline__title">ค้นพบเส้นทางสายสร้างสรรค์</h3>
-            <p class="tline__desc">เริ่มเรียนรู้การออกแบบกราฟิกและพัฒนาเว็บด้วยตัวเอง ทั้ง Photoshop, Figma และการเขียนโค้ด จนหลงรักงานสายนี้และเลือกเรียนต่อในระดับ ปวส.</p>
+            <h3 class="tline__title">จุดเริ่มต้นสายเทคโนโลยีสารสนเทศ</h3>
+            <p class="tline__desc">เริ่มจากการเรียนพื้นฐานการเขียนโปรแกรมและการออกแบบเว็บด้วยตัวเอง ทั้ง HTML/CSS, JavaScript และการใช้งาน Photoshop/Figma จนหลงรักและเลือกเรียนต่อในสาขานี้</p>
           </div>
         </div>
       </div>
@@ -275,12 +308,12 @@
     <div class="container">
       <div class="section__head reveal">
         <p class="section__tag">ติดต่อ · Contact</p>
-        <h2 class="section__title">อยากทำงานด้วยกัน<br />หรือไม่ก็ทักมาเล่น ๆ ได้</h2>
+        <h2 class="section__title">พร้อม join โปรเจกต์<br />หรือแค่ทักมาคุยก็ได้</h2>
       </div>
 
       <div class="contact__grid">
         <div class="contact__info reveal">
-          <p class="contact__lead">ถ้าคุณชอบสไตล์งานของฉัน<br />ส่งข้อความหากันได้เลย</p>
+          <p class="contact__lead">มีโปรเจกต์ให้ช่วยหรืออยาก<br />รู้จักมากกว่านี้ <em>ส่งข้อความได้เลย</em></p>
           <ul class="contact__list">
             <li>
               <span class="contact__icon" aria-hidden="true">✉</span>
@@ -327,7 +360,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p class="footer__mark">AI<em>.</em></p>
-      <p>© <span id="year">2026</span> Ananya Jitthipakorn · สร้างด้วยความตั้งใจในโทนสีเขียวสบายตา</p>
+      <p>© <span id="year">2026</span> Ananya Jitthipakorn · สร้างด้วย Code &amp; Heart <span class="cursor"></span></p>
       <div class="footer__links">
         <a href="#home">บนสุด</a>
         <a href="#projects">ผลงาน</a>
