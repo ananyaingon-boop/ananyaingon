@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio ของ อนัญญา จิตทิพากร — นักออกแบบกราฟิกและนักพัฒนาเว็บ" />
+  <title>อนัญญา จิตทิพากร · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- พื้นหลังกระดาษเก่า -->
+  <div class="noise" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">AI<em>.</em></a>
+      <nav class="nav__links" id="navLinks" aria-label="เมนูหลัก">
+        <a href="#home" class="nav__link">หน้าแรก</a>
+        <a href="#about" class="nav__link">เกี่ยวกับ</a>
+        <a href="#skills" class="nav__link">ทักษะ</a>
+        <a href="#projects" class="nav__link">ผลงาน</a>
+        <a href="#experience" class="nav__link">ประสบการณ์</a>
+        <a href="#contact" class="nav__link nav__link--cta">ติดต่อ</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="home">
+    <div class="hero__deco hero__deco--one" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text reveal">
+        <p class="hero__eyebrow">
+          <span class="line"></span> ยินดีต้อนรับสู่โลกของฉัน / Welcome
+        </p>
+        <h1 class="hero__title">Ananya<br />Jitthipakorn</h1>
+        <p class="hero__subtitle">นักออกแบบกราฟิก <em>&amp;</em> นักพัฒนาเว็บ</p>
+        <p class="hero__desc">
+          ชอบสร้างสรรค์งานที่เรียบง่าย อบอุ่น และมีรายละเอียด
+          ผสานแรงบันดาลใจจากธรรมชาติเข้ากับการออกแบบดิจิทัล
+          เพื่อให้ทุกชิ้นงานมีเรื่องราวและตัวตนของตัวเอง
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">ดูผลงานของฉัน</a>
+          <a href="#contact" class="btn btn--ghost">ติดต่อฉัน</a>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__map"></div>
+          <span>นครปฐม, ประเทศไทย</span>
+          <span class="dot">·</span>
+          <span>พร้อมรับงานอิสระ</span>
+        </div>
+      </div>
+
+      <div class="hero__portrait reveal">
+        <div class="frame">
+          <img src="inmonky.jpg" alt="ภาพโปรไฟล์ของ Ananya Jitthipakorn" class="frame__img" />
+        </div>
+        <div class="stamp" aria-hidden="true">
+          <span>A</span><span>nanya</span>
+          <svg viewBox="0 0 100 100" class="stamp__svg">
+            <defs>
+              <path id="stampCircle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+            </defs>
+            <text>
+              <textPath href="#stampCircle">PORTFOLIO · 2026 · ART &amp; CODE </textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="leaf leaf--1" aria-hidden="true"></div>
+        <div class="leaf leaf--2" aria-hidden="true"></div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="เลื่อนลง">
+      <span class="hero__scroll-text">scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">เกี่ยวกับฉัน · About</p>
+        <h2 class="section__title">เดินช้า ๆ แต่ไปถึง<br />ทุกที่ที่ตั้งใจ</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__note reveal">
+          <p>
+            สวัสดีค่ะ ฉันชื่อ <strong>อนัญญา จิตทิพากร</strong>
+            นักศึกษาในระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2
+            กำลังศึกษาและฝึกฝนด้านการออกแบบและพัฒนาเว็บ
+            ชอบงานที่ผสมผสานระหว่างความเป็นศิลปะกับความเป็นระบบ
+            ทุกโปรเจกต์คือโอกาส ในการเรียนรู้และเติบโตครั้งใหม่
+          </p>
+          <p class="about__quote">
+            “ออกแบบด้วยใจ คัดสรรด้วยเหตุผล และส่งมอบด้วยความใส่ใจ”
+          </p>
+        </div>
+        <dl class="about__facts reveal">
+          <div class="about__fact">
+            <dt>ชื่อ / Name</dt>
+            <dd>Ananya Jitthipakorn</dd>
+          </div>
+          <div class="about__fact">
+            <dt>สาขา / Field</dt>
+            <dd>กราฟิกดีไซน์ · เว็บดีเวลลอปเมนต์</dd>
+          </div>
+          <div class="about__fact">
+            <dt>อีเมล / Email</dt>
+            <dd><a href="mailto:ananyaingon@gmail.com">ananyaingon@gmail.com</a></dd>
+          </div>
+          <div class="about__fact">
+            <dt>ที่อยู่ / Base</dt>
+            <dd>จังหวัดนครปฐม ประเทศไทย</dd>
+          </div>
+          <div class="about__fact">
+            <dt>ประสบการณ์ / Exp.</dt>
+            <dd>นักศึกษา ปวส. ชั้นปีที่ 2</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">ทักษะ · Skills</p>
+        <h2 class="section__title">เครื่องมือที่ไว้วางใจ<br />ในการสร้างสรรค์</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span class="skill__emoji" aria-hidden="true">✿</span>
+            <h3 class="skill__name">งานออกแบบ</h3>
+          </div>
+          <div class="skill__bars">
+            <div class="bar"><span class="bar__label">Adobe Photoshop</span><div class="bar__track"><i style="width:90%"></i></div></div>
+            <div class="bar"><span class="bar__label">Adobe Illustrator</span><div class="bar__track"><i style="width:85%"></i></div></div>
+            <div class="bar"><span class="bar__label">Figma</span><div class="bar__track"><i style="width:80%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span class="skill__emoji" aria-hidden="true">❧</span>
+            <h3 class="skill__name">พัฒนาเว็บ</h3>
+          </div>
+          <div class="skill__bars">
+            <div class="bar"><span class="bar__label">HTML / CSS</span><div class="bar__track"><i style="width:88%"></i></div></div>
+            <div class="bar"><span class="bar__label">JavaScript</span><div class="bar__track"><i style="width:75%"></i></div></div>
+            <div class="bar"><span class="bar__label">React / PHP</span><div class="bar__track"><i style="width:65%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span class="skill__emoji" aria-hidden="true">✦</span>
+            <h3 class="skill__name">อื่น ๆ</h3>
+          </div>
+          <ul class="skill__list">
+            <li>การถ่ายภาพและจัดแสง</li>
+            <li>Motion Graphic ระดับพื้นฐาน</li>
+            <li>UX / UI Research</li>
+            <li>การพิมพ์และจัดหน้า (Print)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">ผลงาน · Projects</p>
+        <h2 class="section__title">ชิ้นงานที่ฉันได้<br />ลงมือทำด้วยหัวใจ</h2>
+      </div>
+
+      <div class="projects__grid">
+        <article class="card reveal">
+          <div class="card__art card__art--1">
+            <span class="card__badge">Web</span>
+            <span class="card__icon" aria-hidden="true">☕</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">เว็บไซต์ร้านกาแฟวินเทจ</h3>
+            <p class="card__desc">ออกแบบ UI และพัฒนาเว็บไซต์ร้านกาแฟแนววินเทจ พร้อมระบบจองโต๊ะและเมนูออนไลน์ทั้งภาษาไทยและอังกฤษ</p>
+            <div class="card__tags"><span>Figma</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__art card__art--2">
+            <span class="card__badge">Design</span>
+            <span class="card__icon" aria-hidden="true">✒</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">เอกลักษณ์แบรนด์สมุนไพรไทย</h3>
+            <p class="card__desc">รังสรรค์โลโก้ สี และแพ็กเกจจิง ให้แบรนด์ผลิตภัณฑ์สมุนไพรไทย สื่อถึงความนุ่มนวลของธรรมชาติและความเชื่อถือได้</p>
+            <div class="card__tags"><span>Illustrator</span><span>Packaging</span><span>Branding</span></div>
+            <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__art card__art--3">
+            <span class="card__badge">App</span>
+            <span class="card__icon" aria-hidden="true">◈</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">แอปจัดการตารางเรียน</h3>
+            <p class="card__desc">โปรเจกต์ฝึกงานร่วมกับทีม พัฒนาแอปพลิเคชันแจ้งเตือนและจัดการตารางเรียนด้วยแนวคิดที่เข้าใจผู้ใช้เป็นหลัก</p>
+            <div class="card__tags"><span>UX/UI</span><span>React</span><span>Firebase</span></div>
+            <a href="#projects" class="card__link">ดูรายละเอียด <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">เส้นทาง · Journey</p>
+        <h2 class="section__title">ประสบการณ์และ<br />การศึกษา</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tline reveal">
+          <span class="tline__year">2025 — ปัจจุบัน</span>
+          <div class="tline__dot"></div>
+          <div class="tline__body">
+            <h3 class="tline__title">นักศึกษา ระดับ ปวส. ชั้นปีที่ 2</h3>
+            <p class="tline__desc">กำลังศึกษาหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ชั้นปีที่ 2 ด้านการออกแบบและพัฒนาเว็บ พร้อมฝึกฝนทักษะผ่านโปรเจกต์จริงและงานร่วมกับเพื่อนในสตูดิโอของสถาบัน</p>
+          </div>
+        </div>
+        <div class="tline reveal">
+          <span class="tline__year">ระหว่างการศึกษา</span>
+          <div class="tline__dot"></div>
+          <div class="tline__body">
+            <h3 class="tline__title">ออกแบบ / พัฒนาเว็บอิสระ</h3>
+            <p class="tline__desc">รับทำเว็บไซต์ขนาดเล็กและงานกราฟิกตามคอนเซปต์ลูกค้า ทั้งดีไซน์และพัฒนาเองจนจบโปรเจกต์ ควบคู่ไปกับการเรียน</p>
+          </div>
+        </div>
+        <div class="tline reveal">
+          <span class="tline__year">จุดเริ่มต้น</span>
+          <div class="tline__dot"></div>
+          <div class="tline__body">
+            <h3 class="tline__title">ค้นพบเส้นทางสายสร้างสรรค์</h3>
+            <p class="tline__desc">เริ่มเรียนรู้การออกแบบกราฟิกและพัฒนาเว็บด้วยตัวเอง ทั้ง Photoshop, Figma และการเขียนโค้ด จนหลงรักงานสายนี้และเลือกเรียนต่อในระดับ ปวส.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">ติดต่อ · Contact</p>
+        <h2 class="section__title">อยากทำงานด้วยกัน<br />หรือไม่ก็ทักมาเล่น ๆ ได้</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__lead">ถ้าคุณชอบสไตล์งานของฉัน<br />ส่งข้อความหากันได้เลย</p>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon" aria-hidden="true">✉</span>
+              <div><small>อีเมล</small><a href="mailto:ananyaingon@gmail.com">ananyaingon@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">⌕</span>
+              <div><small>ที่อยู่</small><span>นครปฐม, ประเทศไทย</span></div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">✆</span>
+              <div><small>โทรศัพท์</small><a href="tel:+66901234567">+66 90 123 4567</a></div>
+            </li>
+          </ul>
+          <div class="contact__socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Behance">Be</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" action="#" method="post">
+          <div class="field">
+            <label for="name">ชื่อ / Name</label>
+            <input type="text" id="name" name="name" placeholder="พิมพ์ชื่อของคุณ" required />
+          </div>
+          <div class="field">
+            <label for="email">อีเมล / Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required />
+          </div>
+          <div class="field">
+            <label for="message">ข้อความ / Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="เล่าเกี่ยวกับโปรเจกต์ของคุณ..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">ส่งข้อความ</button>
+          <p class="contact__hint" id="formHint">แบบฟอร์มนี้เป็นตัวอย่าง — ใช้ได้จริงเมื่อเชื่อมต่อ backend แล้ว</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__mark">AI<em>.</em></p>
+      <p>© <span id="year">2026</span> Ananya Jitthipakorn · สร้างด้วยความตั้งใจในโทนสีเขียวสบายตา</p>
+      <div class="footer__links">
+        <a href="#home">บนสุด</a>
+        <a href="#projects">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
